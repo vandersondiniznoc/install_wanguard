@@ -60,3 +60,53 @@ Especialista em Linux, Redes, Cibersegurança e ISPs
 
 📄 Licença
 Este repositório está sob a licença MIT. O software Wanguard é proprietário da Andrisoft e requer licenciamento.
+
+=====================================
+
+# Instalação do Andrisoft Wanguard no Debian 12
+
+Este repositório contém um script automatizado para instalar o [Andrisoft Wanguard](https://www.andrisoft.com/) no **Debian 12 (Bookworm)**.
+
+## Requisitos
+- Debian 12 atualizado
+- Acesso root ou permissões sudo
+
+## O que o script faz
+- Atualiza os pacotes do sistema
+- Instala dependências necessárias (wget, gnupg, etc.)
+- Adiciona a chave GPG da Andrisoft
+- Adiciona o repositório oficial da Andrisoft para Debian 12
+- Instala o pacote `wanguard`
+- Inicia e habilita o serviço `WANsupervisor`
+
+## Instruções
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/vandersondiniznoc/wanguard-install-debian12.git
+   cd wanguard-install-debian12
+   ```
+
+2. Torne o script executável:
+   ```bash
+   chmod +x instalar_wanguard.sh
+   ```
+
+3. Execute o script como root:
+   ```bash
+   sudo ./instalar_wanguard.sh
+   ```
+
+## Acesso e configuração
+A pós a instalação, você pode acessar a interface de administração e seguir a documentação oficial para configurar seu ambiente.
+
+## Autor
+**Vanderson Diniz do Nascimento**  
+Especialista em Linux, Redes, Cibersegurança e ISPs
+
+- 🌐 [vandersondiniz.com.br](https://vandersondiniz.com.br)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/vdnascdiniz/)
+
+## Licença
+Este projeto está licenciado sob a MIT License.
+
